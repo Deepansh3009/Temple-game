@@ -59,7 +59,7 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
-        for choice in "square" :
+        for choice in ["square"] :
             print("you are already in the room")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
@@ -127,7 +127,7 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
-        for choice in "circle" :
+        for choice in ["circle"] :
             print("you are already in the room")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
@@ -195,7 +195,7 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
-        for choice in "triangle" :
+        for choice in ["triangle"] :
             print("you are already in the room")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
