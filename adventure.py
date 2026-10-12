@@ -34,7 +34,7 @@ if choice=="left":
 
     print("you have entered the temple, there is a big yard and there is a door in front of you with a lock on it")
     print("you have to guess a pattern to unlock the door and enter the temple.")
-    print("there are four shapes in the pattern, you have to click the shapes in the correct order to unlock the door.")
+    print("there are three shapes in the pattern, you have to click the shapes in the correct order to unlock the door.")
     print("the shapes are: square, circle, triangle.")
     print("there are three huts in the yard, each hut has a shape on these door, you have to go to the huts and find the position of the shape and click the shapes in the correct order to unlock the door.")
     print()
