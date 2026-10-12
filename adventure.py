@@ -48,7 +48,7 @@ def triangle() :
        print("The pedestal glows, the ancient voice echoes through the room again")
        print("the number which you entered is the position of the triangle.")
        print("the door opens")
-       print()
+        print()
 
 print("=======================================================================================================")
 print("                                     THE TEMPLE GAME                                                   ")
