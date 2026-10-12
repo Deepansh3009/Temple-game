@@ -73,8 +73,8 @@ if choice=="left":
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
         if choice=="circle" :
-            print("you have entered the hut with the circle shape on the door, you see a note on the table which has a riddle on it, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note which has a code on it, 3009")
+            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
+            print("you search the hut and you find a note under the bed which has a code on it, 3009")
             print("you go to the safe and put a code")
 
             code=int(input("please enter the code to open the safe="))
@@ -140,8 +140,8 @@ if choice=="left":
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the circle shape on the door, you see a note on the table which has a riddle on it, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note which has a code on it, 3009")
+            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
+            print("you search the hut and you find a note under the table which has a code on it, 3009")
             print("you go to the safe and put a code")
 
             code=int(input("please enter the code to open the safe="))
@@ -156,8 +156,8 @@ if choice=="left":
                 print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
         
     elif choice=="circle" :
-        print("you have entered the hut with the circle shape on the door, you see a note on the table which has a riddle on it, you see a safe in front of you, you have to put a code in the safe to open it")
-        print("you search the hut and you find a note which has a code on it, 3009")
+        print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
+        print("you search the hut and you find a note under the bed which has a code on it, 3009")
         print("you go to the safe and put a code")
     
         code=int(input("please enter the code to open the safe="))
@@ -314,8 +314,8 @@ if choice=="left":
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the circle shape on the door, you see a note on the table which has a riddle on it, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note which has a code on it, 3009")
+            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
+            print("you search the hut and you find a note under the bed which has a code on it, 3009")
             print("you go to the safe and put a code")
 
             code=int(input("please enter the code to open the safe="))
