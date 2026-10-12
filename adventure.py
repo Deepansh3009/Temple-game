@@ -1,4 +1,54 @@
 from builtins import print
+# defining square function 
+def square() :
+    print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
+    print("the note says")
+    print()
+    print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
+    print()
+    print()
+    answer=int(input("please enter the answer to the riddle="))
+    while answer not in [2] :
+        print("incorrect answer")
+        answer=int(input("please enter the answer to the riddle="))
+    print("correct answer, the position of the square is 2")
+    print()
+# defining circle function
+def circle() :
+    print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
+    print("you search the hut and you find a note under the bed which has a code on it, 3009")
+    print("you go to the safe and put a code")
+    code=int(input("please enter the code to open the safe="))
+    while code not in [3009] :
+        print("invalid code")
+        code=int(input("please enter the code to open the safe="))
+        print()
+    if code==3009 :
+        print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
+        print()
+        print()
+# defining triangle function 
+def triangle() :
+    print("you have entered the hut with the triangle shape on the door.")
+    print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
+    print("A deep, ancient voice echoes through the room:")
+    print()
+    print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
+    print()
+    print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
+    print("A small inscription appears on the pedestal:")
+    print()
+    num=int(input("Enter the number you seek"))
+    while num not in [3] :
+        print("the ancient voice echoes through the room again")
+        print("you have entered the wrong number, think again and answer correctly")
+        num=int(input("Enter the number you seek"))
+
+    if num==3 :
+       print("The pedestal glows, the ancient voice echoes through the room again")
+       print("the number which you entered is the position of the triangle.")
+       print("the door opens")
+       print()
 
 print("=======================================================================================================")
 print("                                     THE TEMPLE GAME                                                   ")
@@ -40,25 +90,14 @@ if choice=="left":
     print()
     print("which hut will you go in first")
 
-    choice=input("please enter the shape which is on the hut you wish to go in first=")
+    choice=input("please enter the shape which is on the hut you wish to go in first=").lower()
 
     while choice not in ["square","circle","triangle"] :
         print("invalid respone")
         choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
 
     if choice=="square" :
-        print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
-        print("the note says")
-        print()
-        print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
-        print()
-        print()
-        answer=int(input("please enter the answer to the riddle="))
-        while answer not in [2] :
-            print("incorrect answer")
-            answer=int(input("please enter the answer to the riddle="))
-        print("correct answer, the position of the square is 2")
-        print()
+        square()
         print("now you have to go to other two huts")
         print("which hut you wish to go in : circle or triangle")
         
@@ -73,105 +112,20 @@ if choice=="left":
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
         if choice=="circle" :
-            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note under the bed which has a code on it, 3009")
-            print("you go to the safe and put a code")
-
-            code=int(input("please enter the code to open the safe="))
-
-            while code not in [3009] :
-                print("invalid code")
-                code=int(input("please enter the code to open the safe="))
-            print()
-            
-            if code==3009 :
-                print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
-            print()
-            print()
+            circle()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the triangle shape on the door.")
-            print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
-            print("A deep, ancient voice echoes through the room:")
-            print()
-            print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
-            print()
-            print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
-            print("A small inscription appears on the pedestal:")
-            print()
-                        
-            num=int(input("Enter the number you seek"))
-
-            while num not in [3] :
-                print("the ancient voice echoes through the room again")
-                print("you have entered the wrong number, think again and answer correctly")
-                num=int(input("Enter the number you seek"))
-                        
-            if num==3 :
-                print("The pedestal glows, the ancient voice echoes through the room again")
-                print("the number which you entered is the position of the triangle.")
-                print("the door opens")
+            triangle()
                     
         else :
-            print("you have entered the hut with the triangle shape on the door.")
-            print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
-            print("A deep, ancient voice echoes through the room:")
-            print()
-            print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
-            print()
-            print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
-            print("A small inscription appears on the pedestal:")
-            print()
-            
-            num=int(input("Enter the number you seek"))
-                
-            while num not in [3] :
-                print("the ancient voice echoes through the room again")
-                print("you have entered the wrong number, think again and answer correctly")
-                num=int(input("Enter the number you seek"))
-            
-            if num==3 :
-                print("The pedestal glows, the ancient voice echoes through the room again")
-                print("the number which you entered is the position of the triangle.")
-                print("the door opens")
-            print()
-            print()
+            triangle()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note under the table which has a code on it, 3009")
-            print("you go to the safe and put a code")
-
-            code=int(input("please enter the code to open the safe="))
-
-            while code not in [3009] :
-                print("invalid code")
-                code=int(input("please enter the code to open the safe="))
-
-            print()
-
-            if code==3009 :
-                print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
-        
+            circle()
     elif choice=="circle" :
-        print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
-        print("you search the hut and you find a note under the bed which has a code on it, 3009")
-        print("you go to the safe and put a code")
-    
-        code=int(input("please enter the code to open the safe="))
-
-        while code not in [3009] :
-            print("invalid code")
-            code=int(input("please enter the code to open the safe="))
-        
-        print()
-        
-        if code==3009 :
-            print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
-        
-        print()
+        circle()
         print("now you have to go to other two huts")
         print("which hut you wish to go in : square or triangle")
         
@@ -186,105 +140,20 @@ if choice=="left":
             choice=input("please enter square or triangle to choose the hut you want to go in now=").lower()
     
         if choice=="square" :
-            print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
-            print("the note says")
-            print()
-            print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
-            print()
-            print()
-            answer=int(input("please enter the answer to the riddle="))
-            while answer not in [2] :
-                print("incorrect answer")
-                answer=int(input("please enter the answer to the riddle="))
-            print("correct answer, the position of the square is 2")
-            print()
+            square()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the triangle shape on the door.")
-            print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
-            print("A deep, ancient voice echoes through the room:")
-            print()
-            print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
-            print()
-            print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
-            print("A small inscription appears on the pedestal:")
-            print()
-
-            num=int(input("Enter the number you seek"))
-
-            while num not in [3] :
-                print("the ancient voice echoes through the room again")
-                print("you have entered the wrong number, think again and answer correctly")
-                num=int(input("Enter the number you seek"))
-            if num==3 :
-                print("The pedestal glows, the ancient voice echoes through the room again")
-                print("the number which you entered is the position of the triangle.")
-                print("the door opens")
-        
+            triangle()
         else :
-            print("you have entered the hut with the triangle shape on the door.")
-            print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
-            print("A deep, ancient voice echoes through the room:")
-            print()
-            print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
-            print()
-            print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
-            print("A small inscription appears on the pedestal:")
-            print()
-            
-            num=int(input("Enter the number you seek"))    
-            
-            while num not in [3] :
-                print("the ancient voice echoes through the room again")
-                print("you have entered the wrong number, think again and answer correctly")
-                num=int(input("Enter the number you seek"))
-            
-            if num==3 :
-                print("The pedestal glows, the ancient voice echoes through the room again")
-                print("the number which you entered is the position of the triangle.")
-                print("the door opens")
-            print()
-            print()
+            triangle()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
-            print("the note says")
-            print()
-            print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
-            print()
-            answer=int(input("please enter the answer to the riddle="))
-            while answer not in [2] :
-                print("incorrect answer")
-                answer=int(input("please enter the answer to the riddle="))
-            print("correct answer, the position of the square is 2")
-            print()
+            square()
      
     else :
-        print("you have entered the hut with the triangle shape on the door.")
-        print("the door behind shuts and you see three enormous statues standing before you. Suddenly, all three statues begin to glow faintly in the darkness.")
-        print("A deep, ancient voice echoes through the room:")
-        print()
-        print("I am the final guardian, yet I am not the end. I stand after two, but before four. I am the number carved upon the triangle's fate. Speak my name, and the hidden clue shall awaken.")
-        print()
-        print("You look closely at the statues. The middle statue slowly raises its arm and points towards a stone pedestal.")
-        print("A small inscription appears on the pedestal:")
-        print()
-
-        num=int(input("Enter the number you seek"))
-        
-        while num not in [3] :
-            print("the ancient voice echoes through the room again")
-            print("you have entered the wrong number, think again and answer correctly")
-            
-            num=int(input("Enter the number you seek"))
-
-        if num==3 :
-            print("The pedestal glows, the ancient voice echoes through the room again")
-            print("the number which you entered is the position of the triangle.")
-            print("the door opens")
-        
+        triangle()
         print()
         print("now you have to go to other two huts")
         print("which hut you wish to go in : square or circle")
@@ -300,60 +169,15 @@ if choice=="left":
             choice=input("please enter square or circle to choose the hut you want to go in now=").lower()
         
         if choice=="square" :
-            print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
-            print("the note says")
-            print()
-            print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
-            print()
-            answer=int(input("please enter the answer to the riddle="))
-            while answer not in [2] :
-                print("incorrect answer")
-                answer=int(input("please enter the answer to the riddle="))
-            print("correct answer, the position of the square is 2")
-            print()
+            square()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the circle shape on the door, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note under the bed which has a code on it, 3009")
-            print("you go to the safe and put a code")
-
-            code=int(input("please enter the code to open the safe="))
-
-            while code not in [3009] :
-                print("invalid code")
-                code=int(input("please enter the code to open the safe="))
-                print()
-            if code==3009 :
-                print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
+            circle()
 
         else :
-            print("you have entered the hut with the circle shape on the door, you see a note on the table which has a riddle on it, you see a safe in front of you, you have to put a code in the safe to open it")
-            print("you search the hut and you find a note which has a code on it, 3009")
-            print("you go to the safe and put a code")
-            
-            code=int(input("please enter the code to open the safe="))
-            
-            while code not in [3009] :
-                print("invalid code")
-                code=int(input("please enter the code to open the safe="))
-                print()
-            if code==3009 :
-                print("the safe opens and you find a note which says 1, the position of the circle perhaps?")
-            print()
+            circle()
             print("now you have to go to the last hut")
             print()
             print()
-            print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
-            print("the note says")
-            print()
-            print("The Riddle of the Forgotten Guardian I am the number of shadows cast by a single flame when reflected between two mirrors facing one another.I stand between the beginning and the end of a trio, yet I am not the first nor the last.Remove one from me, and I become nothing more than a lonely beginning.What number am I?")
-            print()
-            print()
-
-            answer=int(input("please enter the answer to the riddle="))
-            
-            while answer not in [2] :
-                print("incorrect answer")
-                answer=int(input("please enter the answer to the riddle="))
-            print("correct answer, the position of the square is 2")
+            square()
