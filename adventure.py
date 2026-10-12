@@ -68,7 +68,7 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
-        for choice in ["square"] :
+        while choice=="square" :
             print("you are already in the room")
             choice=input("please enter square, circle or triangle to choose the hut you want to go in first=").lower()
         
@@ -181,10 +181,10 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square or triangle to choose the hut you want to go in now=").lower()
         
-        for choice in ["circle"] :
+        while choice=="circle" :
             print("you are already in the room")
             choice=input("please enter square or triangle to choose the hut you want to go in now=").lower()
-        
+    
         if choice=="square" :
             print("you have entered the hut with the square shape on the door, you see a note on the table which has a riddle on it, you have to solve the riddle to find the position of the square shape in the pattern.")
             print("the note says")
@@ -295,7 +295,7 @@ if choice=="left":
             print("invalid respone")
             choice=input("please enter square or circle to choose the hut you want to go in first=").lower()
         
-        for choice in ["triangle"] :
+        while choice=="triangle" :
             print("you are already in the room")
             choice=input("please enter square or circle to choose the hut you want to go in now=").lower()
         
